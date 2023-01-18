@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>basic project</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="first">
+        <p>you will see welcome messege for you after some time</p>
+        <h1 class="f-1"></h1>
+      </div>
+      <div class="first">
+        <p>check the number is odd or even</p>
+        <button class="btn-1">check</button>
+        <h1 class="s-2"></h1>
+      </div>
+      <div class="first">
+        <p>you will see welcome messege for you after some time</p>
+        <h1 class="firstsk"></h1>
+      </div>
+      <div class="first">
+        <p>you will see welcome messege for you after some time</p>
+        <h1 class="firstsk"></h1>
+      </div>
+      <div class="first">
+        <p>you will see welcome messege for you after some time</p>
+        <h1 class="firstsk"></h1>
+      </div>
+      <div class="first">
+        <p>you will see welcome messege for you after some time</p>
+        <h1 class="firstsk"></h1>
+      </div>
+    </div>
+
+    <script>
+      const first = document.querySelector(".f-1");
+      const secound = document.querySelector(".s-2");
+      // this function  is for first box //
+      setTimeout(function () {
+        first.innerHTML = "hello dear, we  welcome you to our site ";
+      }, 4000);
+
+      // this function is for secound box //
+      function check() {
+        const number = Number(prompt());
+        if (number % 2 == 0) {
+          secound.innerHTML = "THE NUMBER IS EVEN";
+        } else {
+          secound.innerHTML = "THE NUMBER IS ODD ";
+        }
+      }
+      const btn1 = document.querySelector(".btn-1");
+      btn1.addEventListener("click", check);
+    </script>
+  </body>
+</html>
