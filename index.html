@@ -18,8 +18,12 @@
         <h1 class="s-2"></h1>
       </div>
       <div class="first">
-        <p>you will see welcome messege for you after some time</p>
-        <h1 class="firstsk"></h1>
+        <p class="hey">
+          check the number is prime or not <br />
+          BUT THE NUMBER YOU PROVIDE MUST BE GRATER THAN TWO
+        </p>
+        <button class="btn-1" onclick="prime_or_not()">check</button>
+        <h1 class="T-3"></h1>
       </div>
       <div class="first">
         <p>you will see welcome messege for you after some time</p>
@@ -34,26 +38,6 @@
         <h1 class="firstsk"></h1>
       </div>
     </div>
-
-    <script>
-      const first = document.querySelector(".f-1");
-      const secound = document.querySelector(".s-2");
-      // this function  is for first box //
-      setTimeout(function () {
-        first.innerHTML = "hello dear, we  welcome you to our site ";
-      }, 4000);
-
-      // this function is for secound box //
-      function check() {
-        const number = Number(prompt());
-        if (number % 2 == 0) {
-          secound.innerHTML = "THE NUMBER IS EVEN";
-        } else {
-          secound.innerHTML = "THE NUMBER IS ODD ";
-        }
-      }
-      const btn1 = document.querySelector(".btn-1");
-      btn1.addEventListener("click", check);
-    </script>
+    <script src="app.js"></script>
   </body>
 </html>
