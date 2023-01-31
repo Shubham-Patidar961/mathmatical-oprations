@@ -36,10 +36,8 @@ function prime_or_not() {
   }
 }
 
-///
 //this is just a function for geting input and printing input in dom //
 var sumbmit = document.querySelector(".after");
-
 sumbmit.addEventListener("click", () => {
   var value = document.querySelector(".input").value;
   var emapty = document.querySelector(".empaty");
@@ -49,3 +47,19 @@ sumbmit.addEventListener("click", () => {
     emapty.innerHTML = value;
   }
 });
+// this is for cout function
+function output() {
+  let count = 0;
+  document.querySelector(".increse").addEventListener("click", () => {
+    count = count + 1;
+    document.querySelector(".zero").innerHTML = count;
+    console.log(count);
+  });
+  document.querySelector(".decrese").addEventListener("click", () => {
+    count = count - 1;
+    document.querySelector(".zero").innerHTML = count;
+    console.log(count);
+  });
+}
+let count = output();
+// document.querySelector(".decrese")
