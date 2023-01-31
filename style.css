@@ -36,3 +36,44 @@ button {
 .hey {
   text-transform: lowercase;
 }
+/*
+.sk {
+  height: 100vh;
+  background-color: darkslategray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contaner {
+  height: 300px;
+  width: 500px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+#button {
+  padding: 0.65rem 1rem 0.65rem 1rem;
+  margin: 1rem 3rem 1rem 3rem;
+}
+
+.empaty {
+  background-color: rgb(255, 99, 99);
+  color: white;
+  padding: 0rem 1rem 0rem 1rem;
+}
+.joke {
+  background-color: darkslategray;
+  color: white;
+  padding: 0rem 1rem 0rem 1rem;
+}
+.input {
+  font-size: x-large;
+}
+*/

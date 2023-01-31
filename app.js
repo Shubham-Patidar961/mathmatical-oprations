@@ -35,3 +35,17 @@ function prime_or_not() {
     }
   }
 }
+
+///
+//this is just a function for geting input and printing input in dom //
+var sumbmit = document.querySelector(".after");
+
+sumbmit.addEventListener("click", () => {
+  var value = document.querySelector(".input").value;
+  var emapty = document.querySelector(".empaty");
+  if (value === "") {
+    emapty.innerHTML = "provide input value";
+  } else {
+    emapty.innerHTML = value;
+  }
+});
