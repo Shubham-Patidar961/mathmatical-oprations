@@ -48,6 +48,7 @@ sumbmit.addEventListener("click", () => {
   }
 });
 // this is for cout function
+// lerning closer in  js //
 function output() {
   let count = 0;
   document.querySelector(".increse").addEventListener("click", () => {
