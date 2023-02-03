@@ -3,6 +3,26 @@
   margin: 0rem;
   box-sizing: border-box;
 }
+/* styling of nav bar */
+.nav {
+  background: linear-gradient(to left, #9198e5, #e66465);
+  padding: 2rem;
+}
+.nav-bar {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-bar a {
+  text-decoration: none;
+  font-size: x-large;
+  color: white;
+}
+.nav-bar li:hover {
+  border-bottom: 0.5px solid white;
+  cursor: pointer;
+}
+/*  styling complited in nav bar */
 h1 {
   text-transform: uppercase;
   font-size: 25;
@@ -17,7 +37,7 @@ p {
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 325px);
+  grid-template-rows: repeat(3, 325px);
   grid-gap: 4px;
 }
 .first {

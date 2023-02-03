@@ -1,3 +1,26 @@
+/* code for navigation bar */
+const navigation = document.querySelector(".navigation");
+const navigation2 = document.querySelector(".navigation2");
+let greeting = document.querySelector(".greeting");
+function datetime() {
+  let date = new Date().toLocaleDateString();
+  let time = new Date().toLocaleTimeString();
+  let hour = new Date().getHours();
+  navigation.innerHTML = date;
+  navigation2.innerHTML = time;
+  if (hour >= 1 && hour <= 11) {
+    greeting.innerHTML = "Good morning";
+    greeting.style.color = "pink";
+  } else if (hour > 11 && hour <= 19) {
+    greeting.innerHTML = "Good afternoon";
+    greeting.style.color = "green";
+  } else {
+    greeting.innerHTML = "Good night";
+    greeting.style.color = "blue";
+  }
+}
+datetime();
+/*end of navigation code */
 const first = document.querySelector(".f-1");
 const secound = document.querySelector(".s-2");
 // this function  is for first box //
