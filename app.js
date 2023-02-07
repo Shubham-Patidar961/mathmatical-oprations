@@ -30,7 +30,7 @@ setTimeout(function () {
 
 // this function is for secound box //
 function check() {
-  const number = Number(prompt());
+  let number = Number(prompt());
   if (number % 2 == 0) {
     secound.innerHTML = "THE NUMBER IS EVEN";
   } else {
@@ -92,7 +92,6 @@ let btnselact = document.querySelectorAll(".claculeter");
 const btnselact2 = Array.from(btnselact);
 console.log(btnselact2);
 
-//console.log(btnselact2);
 let string = "";
 btnselact2.forEach(function (Element) {
   Element.addEventListener("click", (e) => {
@@ -109,3 +108,9 @@ btnselact2.forEach(function (Element) {
     }
   });
 });
+// dynamically set time to our website //
+setnewtime = () => {
+  let time = new Date().toLocaleTimeString();
+  document.querySelector(".time").innerHTML = time;
+};
+setInterval(setnewtime, 1000);

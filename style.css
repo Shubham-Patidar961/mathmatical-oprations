@@ -78,3 +78,16 @@ input {
   border-radius: 16px;
   font-size: 40px;
 }
+.time {
+  background-color: red;
+  color: white;
+  margin-left: 0.65rem;
+  margin-right: 0.65rem;
+}
+.happy {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
