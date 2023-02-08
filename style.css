@@ -34,7 +34,6 @@ p {
 }
 .main {
   padding: 2rem;
-  height: 100vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 325px);
@@ -90,4 +89,49 @@ input {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+/*styling in footer tag */
+/*styling in footer tag */
+#marker {
+  color: yellow;
+}
+
+#color {
+  color: white;
+  background-color: lightslategrey;
+  padding: 0.85rem;
+  border-radius: 50%;
+}
+#color:hover {
+  color: white;
+  background-color: rgb(235, 101, 101);
+  padding: 0.85rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.footer {
+  background-color: rgb(19, 7, 71);
+  padding: 3rem 2rem 2rem 2rem;
+}
+.footer:hover {
+  background: linear-gradient(to left, #9198e5, #e66465);
+}
+.section-1 {
+  display: flex;
+}
+.section-2 {
+  display: flex;
+}
+#payr {
+  color: aliceblue;
+  padding-left: 0.65rem;
+  padding-bottom: 2rem;
+}
+#jani {
+  padding-bottom: 0%;
+  color: aliceblue;
 }
