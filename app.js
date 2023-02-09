@@ -90,7 +90,6 @@ let count = output();
 // dome manuplation for calculater //
 let btnselact = document.querySelectorAll(".claculeter");
 const btnselact2 = Array.from(btnselact);
-console.log(btnselact2);
 
 let string = "";
 btnselact2.forEach(function (Element) {
@@ -114,3 +113,16 @@ setnewtime = () => {
   document.querySelector(".time").innerHTML = time;
 };
 setInterval(setnewtime, 1000);
+
+// login form
+const submit2 = document.querySelector(".submit2");
+let arry = [];
+submit2.addEventListener("click", (event) => {
+  event.preventDefault();
+  let name = document.querySelector(".name").value;
+  let lastname = document.querySelector(".lastname").value;
+  arry.push({ name, lastname });
+  console.log(arry);
+  event.target.value = "";
+  document.querySelector(".form").reset();
+});
