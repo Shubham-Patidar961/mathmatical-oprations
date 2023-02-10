@@ -50,13 +50,6 @@ p {
 .first:hover {
   transform: scale(1.1);
 }
-button {
-  padding: 12px;
-  background-color: red;
-  color: white;
-  margin: 6px;
-  border: red solid 1px;
-}
 .hey {
   text-transform: lowercase;
 }
@@ -143,4 +136,17 @@ input {
 #jani {
   padding-bottom: 0%;
   color: aliceblue;
+}
+button {
+  padding: 12px;
+  background-color: red;
+  color: white;
+  margin: 6px;
+  border: red solid 1px;
+}
+button:hover {
+  cursor: pointer;
+}
+.joke {
+  text-transform: capitalize;
 }

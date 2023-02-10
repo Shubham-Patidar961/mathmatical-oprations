@@ -11,7 +11,7 @@ function datetime() {
   if (hour >= 1 && hour <= 11) {
     greeting.innerHTML = "Good morning";
     greeting.style.color = "pink";
-  } else if (hour > 11 && hour <= 19) {
+  } else if (hour > 11 && hour < 19) {
     greeting.innerHTML = "Good afternoon";
     greeting.style.color = "green";
   } else {
@@ -126,3 +126,25 @@ submit2.addEventListener("click", (event) => {
   event.target.value = "";
   document.querySelector(".form").reset();
 });
+// joke genrating with a rapid api //
+const options = {
+  method: "GET",
+  headers: {
+    "X-RapidAPI-Key": "052fcea657msh14847c4fae27ef1p152ddejsn57579096b9f8",
+    "X-RapidAPI-Host": "jokes-by-api-ninjas.p.rapidapi.com",
+  },
+};
+
+const joke = () => {
+  fetch("https://jokes-by-api-ninjas.p.rapidapi.com/v1/jokes", options)
+    .then((response) => response.json())
+    .then((data) => {
+      let joke = document.querySelector(".joke");
+      joke.innerHTML = data[0].joke;
+    })
+    .catch((err) => console.error(err));
+};
+const btn = document.querySelector(".joke1");
+btn.addEventListener("click", joke);
+let joke3 = document.querySelector("#joke3");
+joke3.innerHTML = " Your joke is get lode when you click ";
